@@ -1,0 +1,453 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+.layout1{
+    width: 100%;
+    height: 100vh;
+    border: 2px solid transparent;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+    
+}
+
+.layout1::before{
+    content:"";
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    bottom:0px;
+    left: 0px;    
+    right: 0px;
+    background-image: url('https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: .4;
+    z-index: -1;
+    
+   
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width:85%;
+    height: 13vh;
+    margin: 20px auto;
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+}
+
+
+
+
+
+.container .logo{
+    position: relative;
+    
+    padding-left: 10px;
+    
+}
+.container .logo span{
+   
+    color: rgb(48, 227, 202);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.navbar1{
+    margin-right: 40px;
+    
+}
+
+.navbar ul{
+    display: flex;
+    
+}
+
+.navbar ul li{
+    margin-right: 30px;
+    list-style-type: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar ul li a:hover{
+    text-decoration: none;
+    color: rgb(48, 227, 202);
+    transition: .2s;
+    font-weight: 700;
+}
+
+.navbar ul li  #btn1:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+}
+
+.navbar  .active a{
+    text-decoration: none;
+    color: rgb(48, 227, 202);
+}
+#btn1{
+    border: 2 px solid black;
+    border-radius: 9px;
+    background-color: rgb(48, 227, 202);
+    padding: 9px;
+    transition: .2s;
+   
+}
+.hamburger{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.hamburger div{
+     width: 30px;
+     height: 3px;
+     background-color: rgb(48, 227, 202);
+     margin:3px 20px;
+
+
+}
+
+
+
+
+.midnav{
+    position: relative;
+}
+
+.midnav::after{
+    content: "|";
+    position: absolute;
+    top: -9px;
+    right:-10px;
+    color: rgb(83, 4, 83);
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+}
+
+.container2{
+    margin-top: 100px;;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+   
+    
+    
+    
+
+}
+
+.container2 h1{
+    color: white;
+    font-weight: 300;
+    font-size: 45px;
+    
+
+}
+.container2 p{
+    color: rgb(150, 147, 147);
+    margin-bottom: 20px;
+    
+}
+
+.container2 .input{
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    min-height: 14vh;
+   margin:0 auto;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.container2 .input::before{
+
+    content: "";
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: white;
+    opacity: .5;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+
+
+}
+
+.input input:nth-child(1) {
+    margin-right: 30px;
+    margin-left: 25px;
+    width: 380px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.input input:nth-child(2) {
+    margin-right: 30px;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.input1{
+    margin-right: 30px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+.input #btn2{
+
+    margin-right: 30px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-size: 16px;
+    background-color: rgb(48, 227, 202);
+    color: black;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.input  #btn2:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+   justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    left:10% ;
+    top:-60px ;
+    z-index: 1;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.box .boxitem{
+    display: flex;
+    flex-direction: column;
+    
+    flex-wrap: wrap;
+    align-items: center;
+    width: 16.5%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: .3s;
+
+}
+.boxitem p{
+    padding: 10px;
+}
+
+.boxitem .img{
+    margin-top: 10%;
+    width: 50%;
+}
+
+.boxitem .svg{
+    display: none;
+}
+
+.boxitem:hover{
+    background-color: rgb(48, 227, 202);
+    transform: scale(1.1);
+    color: white;
+}
+
+.boxitem:hover .img{
+
+    display: none;
+}
+
+.boxitem:hover .svg{
+    margin-top: 10%;
+    display: flex;
+}
+
+.boxitem:hover div{
+    background-color:rgb(10, 117, 103);
+    padding: 5px;
+    border-radius: 5px;
+}
+.boxitem div{
+    
+    padding: 5px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width:1081px ){
+    .container2 .input{
+        flex-direction: column;
+
+    }
+
+    .input input:nth-child(1){
+        width:95%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .input input:nth-child(2){width: 95%;  margin-bottom: 20px;}
+    .input1{width: 95%;  margin-bottom: 20px;}
+    
+    .layout1{
+
+        height: 120vh;
+    }
+
+    .layout1::before{
+        height: 120vh;
+    }
+
+    .hamburger{
+        display: flex;
+        cursor: pointer;
+    }
+
+    .midnav{
+        display: none;
+    }
+    .navbar{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        left:42.5% ;
+        top:80px;
+        background-color: rgb(48, 227, 202);
+        border-radius: 20px;
+        width: 50%;
+        height: 46vh;
+        z-index: 2;
+        transition: .3s;
+    }
+
+    .navbar1{
+        position: relative;
+        top: 0px;
+       
+    }
+    .navbar1 .active a{
+        color: black;
+    }
+
+    .navbar2{
+        position: relative;
+        top: 5px;
+        left: -20px;
+       
+    }
+
+    
+    .navbar1 ul{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .navbar2 ul{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .navbar1 ul li, .navbar2 ul li {
+        margin: 10px;
+    }
+    
+    .navbar1 ul li a:hover, .navbar2 ul li a:hover {
+        color: blanchedalmond;
+    }
+    
+    
+    .navbar2 #btn1{
+        display: none;
+        
+    }
+
+    .nav-active{
+        display: flex;
+    }
+   
+   
+
+  
+
+}
+
+@media only screen and (max-width:750px){
+
+    .box .boxitem{
+        width: 50%;
+    }
+
+    .container2 .input{
+        flex-direction: column;
+        margin-right: 40px;
+    }
+    
+ 
+
+}
+
+
+
+/* layout2 */
+
+
